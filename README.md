@@ -31,8 +31,11 @@
   [http://localhost:3000](http://localhost:3000/)
 
 - **Run your test suites**
+
   `rails test`
+  
   or to keep Guard running your tests each time you save
+  
   `bundle exec guard`
 
   
