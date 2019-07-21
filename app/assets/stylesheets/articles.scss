@@ -1,0 +1,13 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div#error_explanation{
+  background-color: pink;
+  text-align: center;
+}
+div#error_explanation ul li{
+  font-style: italic;
+}
+
+// <li>Title can't be blank</li>
+// #error_explanation > ul > li:nth-child(1)
