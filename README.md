@@ -1,24 +1,38 @@
-# README
+# Bloggy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Check your current Ruby and Rails versions. This project is currently using the latest Ruby 2.6.3 and Rails 5.2.3 *
 
-Things you may want to cover:
+  `ruby -v`
 
-* Ruby version
+  `rails -v`
 
-* System dependencies
+  *If you need to update or set your default Ruby follow this gist https://gist.github.com/luminousbeam/23057c8becae7685845d5f98fa850126
 
-* Configuration
+- **Clone git repository:**
 
-* Database creation
+  `git clone https://github.com/luminousbeam/bloggy.git`
 
-* Database initialization
+- **Install all dependencies**
 
-* How to run the test suite
+  `bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
+- **Create db and migrate schema**
 
-* Deployment instructions
+  `rake db:create`
 
-* ...
+  `rake db:migrate`
+
+- **Now run your application**
+
+  `rails s`
+
+- **Visit url:**
+
+  [http://localhost:3000](http://localhost:3000/)
+
+- **Run your test suites**
+  `rails test`
+  or to keep Guard running your tests each time you save
+  `bundle exec guard`
+
+  
