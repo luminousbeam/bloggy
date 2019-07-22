@@ -1,13 +1,19 @@
 <%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
-  <p>
-    <%= form.submit %>
-  </p>
+ <article class="media">
+        <div class="media-content">
+        <div class="field">
+            <div class="control">
+    <%= form.text_field :commenter, class: "input", placeholder: "Name"%>
+              </div>
+            </div>
+          <div class="field">
+            <p class="control">
+            <%= form.text_area :body, class: "textarea", placeholder: "Add a comment..." %>
+            </p>
+          </div>
+          <%= form.submit 'submit', :class => "button is-info" %>
+            </div>
+          </nav>
+        </div>
+      </article>
 <% end %>

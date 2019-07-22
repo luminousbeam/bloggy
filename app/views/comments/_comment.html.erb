@@ -1,15 +1,27 @@
+<article class="media">
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong><%= comment.commenter %></strong>
+        <br>
+        <%= comment.body %>
+      </p>
+    </div>
+  </div>
+  <div class="media-right">
+    <%= link_to 'Delete', [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' },
+               class: "delete" %>
+  </div>
+</article>
+
 <p>
-  <strong>Name:</strong>
-  <%= comment.commenter %>
+  
 </p>
 
 <p>
-  <strong>Comment:</strong>
   <%= comment.body %>
 </p>
 
-<p>
-  <%= link_to 'Delete', [comment.article, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
+<br>
