@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.article-wrapper {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+}
+
+.article-card {
+    padding: 20px;
+}
